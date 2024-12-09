@@ -22,6 +22,8 @@ with col2:
 invest = st.number_input('How much investible money do you have available?')
 scale = st.slider("How comofrtable are you with risk", min_value=1,max_value=10, step=1)
 
+st.markdown("Made by Shivangi S :Sunflower:")
+
 user_data = f""" - Primary financial goal is  {goal}"
                 - Current income level: INR {income}"
                 - Investment time horizon: {time}"
@@ -53,33 +55,4 @@ if st.button("Generate Investment Plan"):
         st.subheader("Personalised Investment Plan for you")
         st.markdown(investment_plan)
 
-#footer for the webapp
 
-footer="""<style>
-a:link , a:visited{
-color: blue;
-background-color: transparent;
-text-decoration: underline;
-}
-
-a:hover,  a:active {
-color: red;
-background-color: transparent;
-text-decoration: underline;
-}
-
-.footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: transparent;
-color: black;
-text-align: center;
-}
-</style>
-<div class="footer">
-<p>Developed with ❤ by <a style='display: block; text-align: center;' target="_blank"> Shivangi S </a></p>
-</div>
-"""
-st.markdown(footer,unsafe_allow_html=True)
