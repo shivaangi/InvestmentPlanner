@@ -22,7 +22,7 @@ with col2:
 invest = st.number_input('How much investible money do you have available?')
 scale = st.slider("How comofrtable are you with risk", min_value=1,max_value=10, step=1)
 
-st.markdown("Made by Shivangi S :Sunflower:")
+st.markdown("Made by Shivangi S \:Sunflower:")
 
 user_data = f""" - Primary financial goal is  {goal}"
                 - Current income level: INR {income}"
